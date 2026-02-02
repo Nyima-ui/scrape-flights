@@ -1,0 +1,214 @@
+{
+  "current_price": "typical",
+  "flights": [
+    {
+      "is_best": true,
+      "name": "IndiGo",
+      "departure": "7:40 AM on Tue, Mar 3",
+      "arrival": "12:50 PM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "5 hr 10 min",
+      "stops": 1,
+      "delay": null,
+      "price": "\u20b910258"
+    },
+    {
+      "is_best": true,
+      "name": "IndiGo",
+      "departure": "9:10 AM on Tue, Mar 3",
+      "arrival": "10:30 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr 20 min",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b910888"
+    },
+    {
+      "is_best": true,
+      "name": "Air India",
+      "departure": "6:50 AM on Tue, Mar 3",
+      "arrival": "8:10 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr 20 min",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b910951"
+    },
+    {
+      "is_best": true,
+      "name": "Air India",
+      "departure": "7:05 AM on Tue, Mar 3",
+      "arrival": "8:05 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b910951"
+    },
+    {
+      "is_best": true,
+      "name": "SpiceJet",
+      "departure": "5:55 AM on Tue, Mar 3",
+      "arrival": "7:25 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr 30 min",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b911773"
+    },
+    {
+      "is_best": false,
+      "name": "IndiGo",
+      "departure": "8:10 AM on Tue, Mar 3",
+      "arrival": "9:30 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr 20 min",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b911728"
+    },
+    {
+      "is_best": false,
+      "name": "Air India",
+      "departure": "7:05 AM on Tue, Mar 3",
+      "arrival": "11:30 AM on Wed, Mar 4",
+      "arrival_time_ahead": "+1",
+      "duration": "28 hr 25 min",
+      "stops": 1,
+      "delay": null,
+      "price": "\u20b912883"
+    },
+    {
+      "is_best": false,
+      "name": "SpiceJet",
+      "departure": "10:10 AM on Tue, Mar 3",
+      "arrival": "11:20 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr 10 min",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b913427"
+    },
+    {
+      "is_best": false,
+      "name": "Air India",
+      "departure": "11:30 AM on Tue, Mar 3",
+      "arrival": "11:30 AM on Wed, Mar 4",
+      "arrival_time_ahead": "+1",
+      "duration": "24 hr",
+      "stops": 1,
+      "delay": null,
+      "price": "\u20b915566"
+    },
+    {
+      "is_best": false,
+      "name": "Air India",
+      "departure": "6:50 AM on Tue, Mar 3",
+      "arrival": "11:30 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "4 hr 40 min",
+      "stops": 1,
+      "delay": null,
+      "price": "\u20b916128"
+    },
+    {
+      "is_best": false,
+      "name": "IndiGo",
+      "departure": "7:40 AM on Tue, Mar 3",
+      "arrival": "12:50 PM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "5 hr 10 min",
+      "stops": 1,
+      "delay": null,
+      "price": "\u20b910258"
+    },
+    {
+      "is_best": false,
+      "name": "IndiGo",
+      "departure": "9:10 AM on Tue, Mar 3",
+      "arrival": "10:30 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr 20 min",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b910888"
+    },
+    {
+      "is_best": false,
+      "name": "Air India",
+      "departure": "6:50 AM on Tue, Mar 3",
+      "arrival": "8:10 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr 20 min",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b910951"
+    },
+    {
+      "is_best": false,
+      "name": "Air India",
+      "departure": "7:05 AM on Tue, Mar 3",
+      "arrival": "8:05 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b910951"
+    },
+    {
+      "is_best": false,
+      "name": "IndiGo",
+      "departure": "8:10 AM on Tue, Mar 3",
+      "arrival": "9:30 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr 20 min",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b911728"
+    },
+    {
+      "is_best": false,
+      "name": "Air India",
+      "departure": "7:05 AM on Tue, Mar 3",
+      "arrival": "11:30 AM on Wed, Mar 4",
+      "arrival_time_ahead": "+1",
+      "duration": "28 hr 25 min",
+      "stops": 1,
+      "delay": null,
+      "price": "\u20b912883"
+    },
+    {
+      "is_best": false,
+      "name": "SpiceJet",
+      "departure": "10:10 AM on Tue, Mar 3",
+      "arrival": "11:20 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "1 hr 10 min",
+      "stops": 0,
+      "delay": null,
+      "price": "\u20b913427"
+    },
+    {
+      "is_best": false,
+      "name": "Air India",
+      "departure": "11:30 AM on Tue, Mar 3",
+      "arrival": "11:30 AM on Wed, Mar 4",
+      "arrival_time_ahead": "+1",
+      "duration": "24 hr",
+      "stops": 1,
+      "delay": null,
+      "price": "\u20b915566"
+    },
+    {
+      "is_best": false,
+      "name": "Air India",
+      "departure": "6:50 AM on Tue, Mar 3",
+      "arrival": "11:30 AM on Tue, Mar 3",
+      "arrival_time_ahead": "",
+      "duration": "4 hr 40 min",
+      "stops": 1,
+      "delay": null,
+      "price": "\u20b916128"
+    }
+  ]
+}
