@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Ping Render API
         run: |
-          curl -f -s -I https://flight-api-9clq.onrender.com/ || exit 1
+          curl -f -s https://flight-api-9clq.onrender.com/ || exit 1
