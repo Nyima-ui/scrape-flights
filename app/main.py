@@ -3,12 +3,27 @@ from app.utils import clean_data
 from pydantic import BaseModel, Field
 from fastapi import FastAPI, HTTPException
 from fast_flights import FlightData, Passengers, Result, get_flights
+from fastapi.middleware.cors import CORSMiddleware
 
+origins = [
+    "http://localhost:3000",
+    "https://fairdrop-sage.vercel.app",
+    "http://127.0.0.1:3000",
+]
 
 app = FastAPI(
     title="Flight Search API",
     description="Search for flights using Google Flights data.",
     version="1.0.0",
+)
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
@@ -33,7 +48,7 @@ class SearchFlightsResponse(BaseModel):
     flights: List[FlightResponse]
 
 
-@app.post("/search-flights", response_model=SearchFlightsResponse)
+@app.post("/search-flights", response_model=SearchFlightsResponse, tags=["Flights"])
 def search_flights(request: FlightRequest):
     try:
         result: Result = get_flights(
