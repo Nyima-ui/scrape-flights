@@ -40,12 +40,57 @@ class FlightResponse(BaseModel):
     duration: str
     stops: int | str
     price: str
+    airline_logo: str | None = None
 
 
 class SearchFlightsResponse(BaseModel):
     origin: str
     destination: str
     flights: List[FlightResponse]
+
+
+AIRLINE_CODES = {
+    # Indian Airlines
+    "IndiGo": "6E",
+    "Air India": "AI",
+    "SpiceJet": "SG",
+    "Vistara": "UK",
+    "Go First": "G8",
+    "AirAsia India": "I5",
+    "Alliance Air": "9I",
+    "Air India Express": "IX",
+    # International Airlines
+    "Emirates": "EK",
+    "Qatar Airways": "QR",
+    "Singapore Airlines": "SQ",
+    "Thai Airways": "TG",
+    "Etihad Airways": "EY",
+    "British Airways": "BA",
+    "Lufthansa": "LH",
+    "Air France": "AF",
+    "KLM": "KL",
+    "United Airlines": "UA",
+    "American Airlines": "AA",
+    "Delta Air Lines": "DL",
+    "Southwest Airlines": "WN",
+    "JetBlue Airways": "B6",
+    "Turkish Airlines": "TK",
+    "Cathay Pacific": "CX",
+    "Japan Airlines": "JL",
+    "ANA": "NH",
+    "Korean Air": "KE",
+    "Qantas": "QF",
+    "Air Canada": "AC",
+    # Add more as you encounter them
+}
+
+
+def get_airline_logo(airline_name):
+    """Get airline logo URL from airline name"""
+    code = AIRLINE_CODES.get(airline_name)
+    if code:
+        return f"https://www.gstatic.com/flights/airline_logos/70px/{code}.png"
+    return None
 
 
 @app.post("/search-flights", response_model=SearchFlightsResponse, tags=["Flights"])
@@ -68,6 +113,8 @@ def search_flights(request: FlightRequest):
         raise HTTPException(status_code=500, detail=f"Failed to fetch flights: {e}")
 
     flights = clean_data(result.flights)
+    for flight in flights: 
+        flight["airline_logo"] = get_airline_logo(flight["name"])
     return {
         "origin": request.origin,
         "destination": request.destination,
