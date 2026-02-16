@@ -82,6 +82,11 @@ AIRLINE_CODES = {
     "Qantas": "QF",
     "Air Canada": "AC",
     # Add more as you encounter them
+    "Etihad": "EY",
+    "Gulf Air": "GF",
+    "American": "AA",
+    "Ethiopian": "ET",
+    "SWISS": "LX"
 }
 
 
